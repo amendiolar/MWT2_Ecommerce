@@ -11,10 +11,6 @@ function getValueInput (){
     const salesPrice = document.getElementById("productPrice").value;
     const productStatus = document.getElementById("productStatus").value;
 
-     alert(productName+" "+quantity+" "+salesPrice+" "+productStatus)
-
-
-
      //Prueba createRow
 
      const tabla = document.querySelector('tbody')
@@ -71,6 +67,32 @@ function getValueInput (){
 }
 
 
+
+function createPurchase (){
+     
+
+     //Crear menu de seleccion
+
+     const menu = document.querySelector('#menuCompra')
+
+     const divProd = document.createElement('div');
+    divProd.className = 'productSelect'
+
+    const selProd = document.createElement('select')
+    selProd.className = 'selectorProducto'
+ 
+    producto.forEach((p) =>{
+        const optProd = document.createElement('option')
+        optProd.textContent = p
+    })
+    
+    selProd.append(optProd);
+
+    menu.appendChild(selProd);
+
+    console.log(menu)
+
+}
 
 
 

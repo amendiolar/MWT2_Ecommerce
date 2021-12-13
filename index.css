@@ -1,0 +1,24 @@
+body{
+    background-image: url("./images/nature-gb320e9cf6_1920.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttonContainer{
+    width: fit-content;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttonInventory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
